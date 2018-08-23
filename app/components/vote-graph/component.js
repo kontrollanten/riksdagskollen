@@ -10,14 +10,11 @@ export default Component.extend({
     datasets: [{
         data: [this.get('stats.yes'), this.get('stats.no'), this.get('stats.blank'), this.get('stats.absence')],
         backgroundColor: [
-          '#bad333', 'rgba(255, 0, 0, 1)', '#333', '#666'
+          '#419C51', '#FE4644', '#FE7F2D', '#233D4D'
         ],
         borderColor: [
-          '#bada44', 'rgba(255, 0, 0, 1)', '#333', '#666'
-        ],
-        textColor: [
-          '#bada44', 'rgba(255, 0, 0, 1)', '#333', '#666'
-        ],
+          '#419C51', '#FE4644', '#FE7F2D', '#233D4D'
+        ]
     }],
 
     // These labels appear in the legend and in the tooltips when hovering different arcs

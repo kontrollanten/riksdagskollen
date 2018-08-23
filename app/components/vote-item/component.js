@@ -19,7 +19,6 @@ export default Component.extend({
     openVote() {
       if (!this.get('title')) {
         $.get(`${this.get('model.link')}/json`.replace('http://', 'https://') , data => {
-          console.log('data', data)
           this.set('title', data.votering.dokument.titel);
           this.set('header', data.votering.dokument.typrubrik);
           this.set('name', data.votering.dokument.debattnamn);

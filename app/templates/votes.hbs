@@ -1,7 +1,7 @@
 {{outlet}}
-
-{{vote-graph model=model}}
-
+<div class="vote-pie">
+  {{vote-graph model=model}}
+</div>
 {{#each model as |vote|}}
   {{vote-item model=vote}}
 {{/each}}
