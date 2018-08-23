@@ -26,6 +26,7 @@ export default DS.RESTSerializer.extend({
       id: model.hangar_id + '-' + model.votering_id, 
       vote: model.rost,
       date: model.systemdatum,
+      paragraph: model.beteckning,
       point: model.punkt,
       votation: model.votering,
       concern: model.avser,

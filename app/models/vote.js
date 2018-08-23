@@ -5,6 +5,8 @@ export default DS.Model.extend({
   date: DS.attr(),
   votation: DS.attr(),
   link: DS.attr(),
+  paragraph: DS.attr(),
+  point: DS.attr(),
   voteArea: DS.attr(),
   concern: DS.attr(),
 });

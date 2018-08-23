@@ -1,2 +1,11 @@
-<p>datum: {{model.date}}</p>
-<p>titel: {{model.vote}}</p>
+<div class="vote-date">{{model.date}}</div>
+<h3 {{action "openVote"}}>{{model.paragraph}}:{{model.point}} - {{model.vote}}</h3>
+
+{{#with title}}
+  <section class="vote">
+    <h4>{{header}}</h4>
+    <p>{{title}}</p>
+    <a href={{docLink}} target="_BLANK">Länk</a>
+  </section>
+  
+{{/with}}

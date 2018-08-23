@@ -9,15 +9,15 @@
 {{/each}}
 
 {{#with info.mail}}
-  <p>Email: {{info.mail}}</p>
+  <div class="bio-item">
+    <label>Email: </label><span>{{info.mail}}</span>
+  </div>
 {{/with}}
 
 {{#with info.webpage}}
-  <p>Websida: <a href={{info.webpage}} target="_BLANK">{{info.webpage}}</a></p>
+  <div class="bio-item">
+    <label>Websida:  </label><span><a href={{info.webpage}} target="_BLANK">{{info.webpage}}</a></span>
+  </div>
 {{/with}}
 
 <p>Kandiderar i nästa val: {{info.candidateNextElection}}</p>
-
-{{#each model.information as |info|}}
-  {{log info}}
-{{/each}}
