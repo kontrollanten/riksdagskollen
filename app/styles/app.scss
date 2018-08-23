@@ -41,13 +41,17 @@ html,body {
 }
 
 .back-to-root {
-  position: absolute;
+  position: fixed;
   top: 10px;
   left: 10px;
   i {
     font-size: 34px;
   }
   color: #eee;
+}
+
+.underline {
+  text-decoration: underline;
 }
 
 svg path,

@@ -26,6 +26,19 @@ export default Component.extend({
     ]}
   }),
 
+  options: computed('model', function() {
+    return {
+      legend: {
+        labels: {
+            fontColor: '#eee',
+            fontSize: 14
+        }
+      }
+    }
+  }),
+
+  
+
   store: Service(),
 
   init() {
