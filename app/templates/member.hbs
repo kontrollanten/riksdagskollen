@@ -1,0 +1,27 @@
+{{#member-profile model=model}}
+<figure class="profile-image-wrapper">
+  <img class="member-profile-image" src={{model.bigImage}}>
+  <div class="profile-overlay"></div>
+</figure>
+
+<div class="member-name">
+  <h1>{{model.firstName}} {{model.lastName}}</h1>
+  <p class="member-party">{{model.party}}</p>
+</div>
+
+<div class="member-content">
+
+  <div class="member-menu">
+
+    {{#link-to 'info' class="member-menu-item" replace=true}}Biografi{{/link-to}}
+    {{#link-to 'speeches' class="member-menu-item" replace=true}}Anföranden{{/link-to}}
+    {{#link-to 'votes' class="member-menu-item" replace=true}}Voteringar{{/link-to}}
+
+  </div>
+
+  <div class="inner-content">
+    {{outlet}}
+  </div>
+  
+</div>
+{{/member-profile}}

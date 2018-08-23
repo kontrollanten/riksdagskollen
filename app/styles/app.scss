@@ -1,0 +1,502 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
+@import url('https://fonts.googleapis.com/css?family=Oxygen+Mono');
+
+body {
+  margin: 0;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#aaaac7+0,b1a7b8+28,cecad3+72,dae0e3+101 */
+
+background: linear-gradient(45deg, rgba(170,170,199,1) 0%,rgba(177,167,184,1) 28%,rgba(206,202,211,1) 72%,rgba(218,224,227,1) 101%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  font: 14px/20px "Lato", Arial, sans-serif;
+  //font-family: "Courier new", courier, monospace;
+  font-weight: 400;
+  background: #2b303b;
+}
+
+html,body {
+  height:100%;
+}
+
+.loader{
+  margin: 0 0 2em;
+  height: 100px;
+  width: 20%;
+  text-align: center;
+  padding: 1em;
+  margin: 0 auto 1em;
+  display: inline-block;
+  vertical-align: top;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  z-index: 1;
+}
+
+svg path,
+svg rect{
+  fill: rgb(255, 226, 206);
+}
+
+body > .ember-view {
+  height: 100%;
+}
+
+.app-intro {
+  padding: 20px;
+  color: #f4f4f4;
+  
+  .logo {
+    font-family: 'Oxygen Mono', monospace;
+  }
+  .slogan {
+    font: 14px/20px "Lato", Arial, sans-serif;
+  }
+}
+
+.list-name {
+  padding: 0;
+  margin: 0;
+}
+
+.member-thumbnail-image {
+  object-fit: cover;
+  width:100%;
+  height:120px;
+  width:120px;
+  border-radius: 60px;
+}
+
+.member-profile-image {
+  object-fit: cover;
+  width: 200%;
+  height: 500px;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 420px) {
+  /* For desktop: */
+  .member-profile-image {
+    width: 150%;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  /* For desktop: */
+  .member-profile-image {
+    width: 100%;
+  }
+}
+
+.profile-overlay {
+  position: absolute;
+  top: 0;
+  background: linear-gradient(45deg, rgba(29, 28, 32, 0.65) 0%,rgba(32, 31, 36, 0.25) 100%);
+  width: 100%;
+  height: 500px;
+}
+
+.padding {
+  padding: 20px;
+}
+
+.speech {
+  color: #111;
+  font-size: 18px;
+  background: #ece6d0;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 10px;
+}
+
+.member-profile {
+  display: flex;
+  overflow-y: auto;
+}
+
+.member-profile-wrapper {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  width: 100%;
+}
+
+a:visited, a:hover, a {
+  color: inherit;
+}
+
+.member-profile-inner {
+  overflow-y: auto;
+  color: #c0c5ce;
+}
+
+.party-small {
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 0px;
+  color: #fff;
+}
+
+.card-bottom {
+  color: #fff;
+  width: 100%;
+  padding: 10px 0;
+  //background: linear-gradient(45deg, rgba(29, 28, 32, 0.65) 0%,rgba(32, 31, 36, 0.25) 100%);
+}
+
+.list-item-flex {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.member-menu {
+  padding: 20px 0;
+  position: absolute;
+  top: 451px;
+}
+
+.member-content {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 400px;
+}
+
+@media only screen and (min-width: 700px) {
+  /* For desktop: */
+  .member-content {
+    max-width: 600px;
+  }
+}
+
+.member-menu-item {
+  padding: 10px;
+  margin-bottom: 10px;
+  &.active {
+    border-bottom: 1px solid #fff;
+  }
+  
+}
+
+.inner-content {
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+
+.bio-item {
+  padding-bottom: 10px;
+  label {
+    font-weight: bold;
+  }
+}
+
+.speech-item {
+  cursor: pointer;
+  h3 {
+    padding-top: 0;
+    margin-top: 0;
+    color: #eee;
+  }
+  border-bottom: 1px dashed #aaa;
+  .speech-date {
+    padding-top: 10px;
+    font-size: 12px;
+  }
+
+}
+
+
+
+.member-name {
+  position: absolute;
+  top: 240px;
+  color: rgba(255, 255, 255, 0.7);
+  padding-left: 20px;
+  
+  h1 {
+    margin-bottom: 4px;
+    padding-bottom: 8px;
+  }
+  
+}
+
+.member-party {
+  margin-top: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.card {
+  //background: #d7d8db;
+  color: rgb(31, 31, 31);
+  & a:visited, a:hover, a {
+    color: white;
+  }
+
+}
+
+
+@supports (display: grid) {
+
+  .grid {
+    display: grid;
+    grid-gap: 1.5vw;
+    min-height: 100vh;
+    padding: 1.5vw;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 50vh 30vh repeat(0, minmax(20vh, 1fr));
+    grid-template-areas:
+      "small9 small10";
+  }
+
+  @media screen and (min-width: 750px) {
+    .grid {
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(0, 55vh);
+      grid-template-areas:
+        "small6 small7 small8";
+    }
+  }
+
+  @media screen and (min-width: 1400px) {
+    .grid {
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: auto;
+      grid-template-areas:
+      "1 1 1 1 1 1";
+    }
+  }
+
+}
+
+/* flexbox fallback is the browser does not support display:grid */
+@supports not (display: grid) {
+
+  .grid {
+    display: flex;
+    flex-flow: row wrap;
+    min-height: 100vh;
+    padding: 0.75vw;
+  }
+
+  .grid .item {
+    min-height: 20vh;
+    margin: 0.75vw;
+  }
+
+}
+
+/* Styles, just for fun */
+
+*,*:before,*:after {
+  box-sizing: border-box;
+}
+
+
+.header {
+  margin: 10vh 1.5vw;
+  text-align: center;
+  color: #cedfe9;
+}
+
+.header h1,
+.header h2 {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  line-height: 1;
+}
+
+.header h1 {
+  position: relative;
+  padding-bottom: 0.5em;
+  color: #ffffff;
+  font-size: 2rem;
+}
+
+.header h2 {
+  font-weight: normal;
+  font-size: 0.875rem;
+}
+
+@media screen and (min-width: 750px) {
+
+  .header h1 {
+    font-size: 3.75rem;
+  }
+
+  .header h2 {
+    font-weight: normal;
+    font-size: 1.125rem;
+    letter-spacing: 0.5em;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+
+  .header h1 {
+    font-size: 6rem;
+  }
+
+  .header h2 {
+    font-weight: normal;
+    font-size: 1.5rem;
+  }
+}
+
+.profile-image-wrapper {
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.grid .item:hover .diamond,
+.grid .item:focus .diamond {
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+  transform:  rotateZ(45deg) scale(1.2);
+}
+
+.tooltip {
+  position: absolute;
+  z-index: 1;
+  padding: 0.25rem 1rem;
+  border-radius: 5px;
+  background: #29343d;
+  opacity: 0;
+  color: #cedfe9;
+  font-size: 0.875rem;
+  transition: opacity 500ms, transform 500ms;
+}
+
+.tooltip:before {
+  content: '';
+  position: absolute;
+  top: -9px;
+  left: calc(50% - 10px);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #29343d;
+}
+
+.grid .item:hover .tooltip,
+.grid .item:focus .tooltip {
+  opacity: 1;
+  transform: translateY(70px);
+}
+
+.grid .item {
+  position: relative;
+  background-position:  left bottom;
+  background-size: 150% 100%;
+  transition: background 500ms, outline 500ms;
+  background-position: top left;
+  outline: transparent;
+}
+
+.grid .item:hover,
+.grid .item:focus {
+  background-position: top right;
+}
+
+.grid .item:focus {
+  outline: 2px solid #3eabfa;
+}
+
+@mixin circle($size) {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  left: calc(50% - #{$size/2});
+  top: calc(50% - #{$size/2});
+  width: $size;
+  height: $size;
+}
+
+
+
+$size: 100px;
+.progress-pie-chart {
+  font-size: 12px;
+  width: $size;
+  color: #444;
+  height: $size;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  position: relative;
+}
+.ppc-progress {
+  @include circle($size);
+  clip: rect(0, $size, $size, #{$size/2});
+  .ppc-progress-fill {
+    @include circle($size);
+    clip: rect(0, #{$size/2}, $size, 0);
+    background: rgb(23, 114, 49);
+    transform: rotate(60deg);
+  }
+  .gt-50 & {
+    clip: rect(0, #{$size/2}, $size, 0);
+    .ppc-progress-fill {
+      clip: rect(0, $size, $size, #{$size/2});
+    }
+  }
+}
+.ppc-percents {
+  @include circle(#{$size/1.15});
+  //background: #333;
+  color: #fff;
+  text-align: center;
+  display: table;
+  span {
+    display: block;
+    font-size: 2.6em;
+    font-weight: bold;
+    color: rgb(22, 90, 41);
+  }
+}
+.pcc-percents-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.pie-yes {
+  .ppc-progress-fill {
+    background: rgb(9, 87, 9);
+  }
+}
+
+.pie-no {
+  .ppc-progress-fill {
+    background: rgb(223, 82, 1);
+  }
+}
+
+.pie-blank {
+  .ppc-progress-fill {
+    background: rgb(240, 9, 240);
+  }
+}
+
+.pie-absence {
+  .ppc-progress-fill {
+    background: rgb(144, 33, 148);
+  }
+}
+

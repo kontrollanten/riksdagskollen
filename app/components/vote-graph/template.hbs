@@ -1,0 +1,59 @@
+{{#if stats.yes}}
+<div class="pie-yes">
+  <div class="progress-pie-chart {{votedYes.gt50}}">
+    <div class="ppc-progress">
+      <div class="ppc-progress-fill" style={{votedYes.style}}></div>
+    </div>
+    <div class="ppc-percents">
+      <div class="pcc-percents-wrapper">
+          Ja: {{stats.yes}}%
+      </div>
+    </div>
+  </div>
+</div>
+{{/if}}
+
+{{#if stats.no}}
+  <div class="pie-no">
+    <div class="progress-pie-chart {{votedNo.gt50}}">
+      <div class="ppc-progress">
+        <div class="ppc-progress-fill" style={{votedNo.style}}></div>
+      </div>
+      <div class="ppc-percents">
+        <div class="pcc-percents-wrapper">
+            Nej: {{stats.no}}%
+        </div>
+      </div>
+    </div>
+  </div>
+{{/if}}
+
+{{#if stats.absence}}
+<div class="pie-absence">
+  <div class="progress-pie-chart {{votedAbsence.gt50}}">
+    <div class="ppc-progress">
+      <div class="ppc-progress-fill" style={{votedAbsence.style}}></div>
+    </div>
+    <div class="ppc-percents">
+      <div class="pcc-percents-wrapper">
+          Frånvarande: {{stats.absence}}%
+      </div>
+    </div>
+  </div>
+</div>
+{{/if}}
+
+{{#with stats.blank}}
+<div class="pie-blank">
+  <div class="progress-pie-chart {{votedBlank.gt50}}">
+    <div class="ppc-progress">
+      <div class="ppc-progress-fill" style={{votedBlank.style}}></div>
+    </div>
+    <div class="ppc-percents">
+      <div class="pcc-percents-wrapper">
+          Avstår: {{stats.blank}}%
+      </div>
+    </div>
+  </div>
+</div>
+{{/with}}

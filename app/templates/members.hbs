@@ -1,0 +1,28 @@
+<div class="app-intro">
+  <h1 class="logo">Riksdagsarkivet.</h1>
+  <p class="slogan">Håll koll på dina folkvalda politiker.</p>
+</div>
+{{#member-list}}
+  {{#each model as |member|}}
+    {{#link-to 'member' member.id class="item card"}}
+      {{#member-list-item party=member.party url=member.bild_url_192}}
+        <div class="list-item-flex">
+
+          <img src={{member.thumbnail}} class="member-thumbnail-image">
+          
+        </div>
+        <div class="card-bottom {{member.party}}">
+          <div class="list-item-flex">
+            <p class="list-name">{{member.firstName}} {{member.lastName}}</p>
+          </div>
+          <div class="list-item-flex">
+            <span class="party-small">{{member.party}}</span>
+          </div>
+        </div>
+        
+        
+      {{/member-list-item}}
+    {{/link-to}}
+  {{/each}}
+{{/member-list}}
+

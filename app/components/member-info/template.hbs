@@ -1,0 +1,23 @@
+<div class="bio-item">
+  <label>Född: </label><span>{{model.born}}</span>
+</div>
+
+{{#each info.bio as |bio|}}
+  <div class="bio-item">
+    <label>{{bio.kod}}: </label><span>{{bio.uppgift}}</span>
+  </div>
+{{/each}}
+
+{{#with info.mail}}
+  <p>Email: {{info.mail}}</p>
+{{/with}}
+
+{{#with info.webpage}}
+  <p>Websida: <a href={{info.webpage}} target="_BLANK">{{info.webpage}}</a></p>
+{{/with}}
+
+<p>Kandiderar i nästa val: {{info.candidateNextElection}}</p>
+
+{{#each model.information as |info|}}
+  {{log info}}
+{{/each}}
