@@ -40,6 +40,7 @@ html,body {
   position: absolute;
   top: 10px;
   left: 10px;
+  color: #eee;
 }
 
 svg path,
@@ -189,8 +190,9 @@ a:visited, a:hover, a {
 .member-menu-item {
   padding: 10px;
   margin-bottom: 10px;
+  font-weight: bold;
   &.active {
-    border-bottom: 1px solid #fff;
+    border-bottom: 2px solid #eee;
   }
   
 }

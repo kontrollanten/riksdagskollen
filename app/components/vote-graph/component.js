@@ -5,6 +5,30 @@ import { htmlSafe } from '@ember/string';
 
 export default Component.extend({
 
+  pie: computed('model', function() {
+    return {
+    datasets: [{
+        data: [this.get('stats.yes'), this.get('stats.no'), this.get('stats.blank'), this.get('stats.absence')],
+        backgroundColor: [
+          '#bad333', 'rgba(255, 0, 0, 1)', '#333', '#666'
+        ],
+        borderColor: [
+          '#bada44', 'rgba(255, 0, 0, 1)', '#333', '#666'
+        ],
+        textColor: [
+          '#bada44', 'rgba(255, 0, 0, 1)', '#333', '#666'
+        ],
+    }],
+
+    // These labels appear in the legend and in the tooltips when hovering different arcs
+    labels: [
+        'Ja',
+        'Nej',
+        'Avstår',
+        'Frånvarande'
+    ]}
+  }),
+
   store: Service(),
 
   init() {

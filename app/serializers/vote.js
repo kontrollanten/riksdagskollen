@@ -23,7 +23,7 @@ export default DS.RESTSerializer.extend({
 
   _normalize(model) {
     return {
-      id: model.hangar_id + '-' + model.votering_id, 
+      id: model.votering_id, 
       vote: model.rost,
       date: model.systemdatum,
       paragraph: model.beteckning,
