@@ -36,6 +36,12 @@ html,body {
   z-index: 1;
 }
 
+.back-to-root {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
 svg path,
 svg rect{
   fill: rgb(255, 226, 206);

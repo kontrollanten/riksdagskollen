@@ -2,7 +2,7 @@ import DS from 'ember-data';
 
 export default DS.RESTAdapter.extend({
 
-  host: 'http://data.riksdagen.se',
+  host: 'https://data.riksdagen.se',
 
   namespace: 'personlista',
 
