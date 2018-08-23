@@ -10,7 +10,7 @@ export default Component.extend({
   actions: {
     openSpeech() {
       if (!this.get('text')) {
-        $.get(`${this.get('model.speechUrl')}/json` , data => {
+        $.get(`${this.get('model.speechUrl')}/json`.replace('http://', 'https://') , data => {
           this.set('text', data.anforande.anforandetext)
         });
       } else {
