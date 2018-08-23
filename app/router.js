@@ -18,7 +18,6 @@ Router.map(function() {
     this.route('votes', {resetNamespace: true});
   });
 
-  
 });
 
 export default Router;

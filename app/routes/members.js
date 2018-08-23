@@ -2,7 +2,12 @@ import Route from '@ember/routing/route';
 
 export default Route.extend({
   model() {
-    return this.store.findAll('member', {reload: true}).then(data => {
+    let models = this.store.peekAll('member');
+    let reload = true;
+    if (models.length > 1) {
+      reload = false;
+    }
+    return this.store.findAll('member', {reload: reload}).then(data => {
       return data.sortBy('sortName')
     });
   },
@@ -10,9 +15,7 @@ export default Route.extend({
     loading(transition) {
       let controller = this.controllerFor('application');
       controller.set('currentlyLoading', true);
-      console.log('laddar...')
       transition.promise.finally(function() {
-        console.log('klart')
           controller.set('currentlyLoading', false);
       });
     }
