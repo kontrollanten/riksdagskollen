@@ -156,9 +156,7 @@ section.vote {
   flex-direction: column;
   overflow-y: auto;
   width: 100%;
-  background: linear-gradient(45deg,#1b99a7 0,#17b19c 100%);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background: #1b99a7;
 }
 
 a:visited, a:hover, a {
