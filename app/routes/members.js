@@ -9,7 +9,12 @@ export default Route.extend({
     }
     return this.store.findAll('member', {reload: reload}).then(data => {
       return data.sortBy('sortName')
+
     });
+  },
+  setupController(controller, model) {
+    this._super(...arguments);
+    controller.set('stars', model.filterBy('firstName', 'Said'));
   },
   actions: {
     loading(transition) {

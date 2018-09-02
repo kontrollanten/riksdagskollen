@@ -11,7 +11,9 @@ export default DS.Model.extend({
   bigImage: DS.attr(),
   information: DS.attr(),
   gender: DS.attr(),
-  born: DS.attr()
+  born: DS.attr(),
+
+  stared: false
 
 
 });

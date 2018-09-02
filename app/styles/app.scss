@@ -7,11 +7,13 @@ body {
   height: 100%;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#aaaac7+0,b1a7b8+28,cecad3+72,dae0e3+101 */
 
-  background: linear-gradient(45deg, rgba(170,170,199,1) 0%,rgba(177,167,184,1) 28%,rgba(206,202,211,1) 72%,rgba(218,224,227,1) 101%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  //background: linear-gradient(45deg, rgba(170,170,199,1) 0%,rgba(177,167,184,1) 28%,rgba(206,202,211,1) 72%,rgba(218,224,227,1) 101%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   font: 16px/20px "Lato", Arial, sans-serif;
   //font-family: "Courier new", courier, monospace;
   font-weight: 400;
-  background: #2b303b;
+  background: linear-gradient(45deg,#1b99a7 0,#70a71969 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   line-height: 1.6em;
   -webkit-overflow-scrolling: touch;
 }
@@ -31,10 +33,7 @@ html,body {
   vertical-align: top;
   position: fixed;
   top: 0;
-  bottom: 0;
-  left: 0;
   right: 0;
-  margin: auto;
   width: 100px;
   height: 100px;
   z-index: 1;
@@ -47,7 +46,17 @@ html,body {
   i {
     font-size: 34px;
   }
-  color: #eee;
+  color: #fff;
+}
+
+.star-member {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  i {
+    font-size: 34px;
+  }
+  color: #fff;
 }
 
 .underline {
@@ -112,7 +121,7 @@ body > .ember-view {
 .profile-overlay {
   position: absolute;
   top: 0;
-  background: linear-gradient(45deg, rgba(29, 28, 32, 0.65) 0%,rgba(32, 31, 36, 0.25) 100%);
+  background: linear-gradient(45deg, rgba(90, 33, 54, 0.65) 0%, rgba(32, 31, 36, 0.25) 100%);
   width: 100%;
   height: 500px;
 }
@@ -124,7 +133,7 @@ body > .ember-view {
 .speech {
   color: #111;
   font-size: 18px;
-  background: #ece6d0;
+  background: #fff;
   font-family: 'Times New Roman', Times, serif;
   padding: 10px;
 }
@@ -132,7 +141,7 @@ body > .ember-view {
 section.vote {
   color: #111;
   font-size: 18px;
-  background: #ece6d0;
+  background: #fff;
   font-family: 'Times New Roman', Times, serif;
   padding: 10px;
 }
@@ -147,6 +156,7 @@ section.vote {
   flex-direction: column;
   overflow-y: auto;
   width: 100%;
+  background: linear-gradient(45deg,#1b99a7 0,#17b19c 100%);
 }
 
 a:visited, a:hover, a {
@@ -155,7 +165,7 @@ a:visited, a:hover, a {
 
 .member-profile-inner {
   overflow-y: auto;
-  color: #c0c5ce;
+  color: #fff;
 }
 
 .party-small {
@@ -230,7 +240,7 @@ a:visited, a:hover, a {
     margin-top: 0;
     color: #eee;
   }
-  border-bottom: 1px dashed #aaa;
+  border-bottom: 1px dashed #000;
   .speech-date {
     padding-top: 10px;
     font-size: 12px;
@@ -245,7 +255,7 @@ a:visited, a:hover, a {
     margin-top: 0;
     color: #eee;
   }
-  border-bottom: 1px dashed #aaa;
+  border-bottom: 1px dashed #000;
   .vote-date {
     padding-top: 10px;
     font-size: 12px;
@@ -291,7 +301,6 @@ a {
   .grid {
     display: grid;
     grid-gap: 1.5vw;
-    min-height: 100vh;
     padding: 1.5vw;
   }
 
