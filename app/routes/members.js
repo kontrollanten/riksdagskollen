@@ -14,7 +14,7 @@ export default Route.extend({
   },
   setupController(controller, model) {
     this._super(...arguments);
-    controller.set('stars', model.filterBy('firstName', 'Said'));
+    controller.set('stars', model.filterBy('stared', true));
   },
   actions: {
     loading(transition) {

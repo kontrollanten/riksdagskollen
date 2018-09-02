@@ -1,59 +1,69 @@
-<div class="app-intro">
-  <h1 class="logo">Dina valda.</h1>
-  <p class="slogan">Håll koll på dina folkvalda politiker och följ deras arbete i riksdagen.</p>
+
+<div class="members-wrapper">
+  <div class="app-intro">
+    <h1 class="logo">Dina valda.</h1>
+    <p class="slogan">Håll koll på dina folkvalda politiker och följ deras arbete i riksdagen.</p>
+  </div>
+
+  {{!member-seats model=model}}
+
+  {{#if stars}}
+    <h3 class="member-category">Stjärnmarkerade</h3>
+    {{#member-list}}
+      {{#each stars as |member|}}
+        {{#if member.stared}}
+        {{#link-to 'member' member.id class="item card"}}
+          {{#member-list-item party=member.party url=member.bild_url_192}}
+            <div class="list-item-flex">
+
+              <img src={{member.thumbnail}} class="member-thumbnail-image">
+              
+            </div>
+            <div class="card-bottom {{member.party}}">
+              <div class="list-item-flex">
+                <p class="list-name">{{member.firstName}} {{member.lastName}}</p>
+              </div>
+              <div class="list-item-flex">
+                <span class="party-small">{{member.party}}</span>
+              </div>
+            </div>
+            
+            
+          {{/member-list-item}}
+        {{/link-to}}
+        {{/if}}
+      {{/each}}
+    {{/member-list}}
+
+    <h3 class="member-category">Alla ledamöter</h3>
+
+  {{/if}}
+
+  {{#member-list}}
+    {{#each model as |member|}}
+      {{#link-to 'member' member.id class="item card"}}
+        {{#member-list-item party=member.party url=member.bild_url_192}}
+          <div class="list-item-flex">
+
+            {{!responsive-image image=(member.thumbnail) lazy=false lqip=false class="member-thumbnail-image"}}
+            <img src={{member.thumbnail}} class="member-thumbnail-image">
+            
+          </div>
+          <div class="card-bottom {{member.party}}">
+            <div class="list-item-flex">
+              <p class="list-name">{{member.firstName}} {{member.lastName}}</p>
+            </div>
+            <div class="list-item-flex">
+              <span class="party-small">{{member.party}}</span>
+            </div>
+          </div>
+          
+          
+        {{/member-list-item}}
+      {{/link-to}}
+    {{/each}}
+  {{/member-list}}
+
+
 </div>
-<!--
-<h3 class="member-category">Dina favoriter</h3>
-{{#member-list}}
-  {{#each stars as |member|}}
-    {{#if member.stared}}
-    {{#link-to 'member' member.id class="item card"}}
-      {{#member-list-item party=member.party url=member.bild_url_192}}
-        <div class="list-item-flex">
-
-          <img src={{member.thumbnail}} class="member-thumbnail-image">
-          
-        </div>
-        <div class="card-bottom {{member.party}}">
-          <div class="list-item-flex">
-            <p class="list-name">{{member.firstName}} {{member.lastName}}</p>
-          </div>
-          <div class="list-item-flex">
-            <span class="party-small">{{member.party}}</span>
-          </div>
-        </div>
-        
-        
-      {{/member-list-item}}
-    {{/link-to}}
-    {{/if}}
-  {{/each}}
-{{/member-list}}
-
-<h3 class="member-category">Alla ledamöter</h3>
-
--->
-{{#member-list}}
-  {{#each model as |member|}}
-    {{#link-to 'member' member.id class="item card"}}
-      {{#member-list-item party=member.party url=member.bild_url_192}}
-        <div class="list-item-flex">
-
-          <img src={{member.thumbnail}} class="member-thumbnail-image">
-          
-        </div>
-        <div class="card-bottom {{member.party}}">
-          <div class="list-item-flex">
-            <p class="list-name">{{member.firstName}} {{member.lastName}}</p>
-          </div>
-          <div class="list-item-flex">
-            <span class="party-small">{{member.party}}</span>
-          </div>
-        </div>
-        
-        
-      {{/member-list-item}}
-    {{/link-to}}
-  {{/each}}
-{{/member-list}}
 
