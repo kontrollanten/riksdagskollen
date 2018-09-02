@@ -4,8 +4,8 @@ export default Component.extend({
 
   classNames: ['star-member'],
 
-  click() {
+  touchStart() {
     console.log('click')
     this.toggleProperty('member.stared');
-  }
+  },
 });
