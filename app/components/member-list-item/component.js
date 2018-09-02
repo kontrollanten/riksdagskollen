@@ -9,11 +9,15 @@ export default Component.extend({
 
   }),
 
-  prepareForFOrceClick(e) {
+  prepareForForceClick(e) {
+    e.preventDefault();
+    e.stopPropagation();
     console.log('prepare')
   },
 
   enterForceClick(e) {
+    e.preventDefault();
+    e.stopPropagation();
     console.log('enter')
     this.toggleProperty('model.stared');
   },
@@ -31,13 +35,10 @@ export default Component.extend({
 
     let self = this
 
-    this.element.addEventListener("webkitmouseforcewillbegin", () => {
-      console.log('prepare')
-      //self.toggleProperty('model.stared');
-    }, true);
-    this.element.addEventListener("webkitmouseforcedown", this.enterForceClick.bind(this), true);
-    this.element.addEventListener("webkitmouseforceup", this.endForceClick.bind(this), true);
-    this.element.addEventListener("webkitmouseforcechanged", this.forceChanged.bind(this), true)
+    this.element.addEventListener("webkitmouseforcewillbegin", this.prepareForForceClick.bind(this), true);
+    this.element.addEventListener("webkitmouseforcedown", this.enterForceClick.bind(this), false);
+    this.element.addEventListener("webkitmouseforceup", this.endForceClick.bind(this), false);
+    this.element.addEventListener("webkitmouseforcechanged", this.forceChanged.bind(this), false)
   }
 
 });

@@ -22,6 +22,10 @@ html,body {
   height:100%;
 }
 
+[data-ember-action] {
+  cursor: pointer;
+}
+
 .loader{
   margin: 0 0 2em;
   height: 100px;
