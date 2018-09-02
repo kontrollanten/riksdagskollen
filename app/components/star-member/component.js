@@ -4,7 +4,9 @@ export default Component.extend({
 
   classNames: ['star-member'],
 
-  click() {
-    this.toggleProperty('member.stared');
-  },
+  actions: {
+    toggle() {
+      this.toggleProperty('member.stared');
+    }
+  }
 });
