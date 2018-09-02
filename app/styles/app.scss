@@ -194,6 +194,17 @@ h3.member-category {
   align-items: center;
   justify-content: center;
   display: flex;
+
+  i {
+    position: absolute;
+    top: -6px;
+    left: 12px;
+    color: #fff;
+    font-size: 38px;
+    text-shadow: aquamarine;
+    box-shadow: darkslategray;
+    text-shadow: 2px 2px #3333334d;
+  }
 }
 
 .member-menu {

@@ -10,10 +10,10 @@ export default Component.extend({
     datasets: [{
         data: [this.get('stats.yes'), this.get('stats.no'), this.get('stats.blank'), this.get('stats.absence')],
         backgroundColor: [
-          '#ACFFB3', '#FFAAD2', '#86ABFF', '#1b99a7'
+          '#ACFFB3', '#FFAAD2', '#86E8E0', '#1b99a7'
         ],
         borderColor: [
-          '#ACFFB3', '#FFAAD2', '#86ABFF', '#1b99a7'
+          '#ACFFB3', '#FFAAD2', '#86E8E0', '#1b99a7'
         ]
     }],
 
