@@ -9,4 +9,29 @@ export default Component.extend({
 
   }),
 
+  prepareForFOrceClick(e) {
+
+  },
+
+  enterForceClick(e) {
+    this.toggleProperty('model.stared');
+  },
+
+  endForceClick(e) {
+
+  },
+
+  forceChanged(e) {
+
+  },
+
+  didInsertElement() {
+    this._super(...arguments);
+
+    this.element.addEventListener("webkitmouseforcewillbegin", this.prepareForForceClick, false);
+    this.element.addEventListener("webkitmouseforcedown", this.enterForceClick, false);
+    this.element.addEventListener("webkitmouseforceup", this.endForceClick, false);
+    this.element.addEventListener("webkitmouseforcechanged", this.forceChanged, false)
+  }
+
 });

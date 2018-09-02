@@ -42,7 +42,7 @@
   {{#member-list}}
     {{#each model as |member|}}
       {{#link-to 'member' member.id class="item card"}}
-        {{#member-list-item party=member.party url=member.bild_url_192}}
+        {{#member-list-item party=member.party model=member url=member.bild_url_192}}
           <div class="list-item-flex">
 
             {{!responsive-image image=(member.thumbnail) lazy=false lqip=false class="member-thumbnail-image"}}
