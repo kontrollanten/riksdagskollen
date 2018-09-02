@@ -1,4 +1,4 @@
-<div {{action "toggle"}}>
+<div {{action "toggle" bubbles=false on=touchEnd}}>
   {{#if member.stared}}
     {{material-icon "star"}}
   {{else}}
