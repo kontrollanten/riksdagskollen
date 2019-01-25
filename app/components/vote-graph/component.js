@@ -1,5 +1,5 @@
 import Component from '@ember/component';
-import { computed, get } from '@ember/object';
+import { computed } from '@ember/object';
 import { inject as Service } from '@ember/service';
 import { htmlSafe } from '@ember/string';
 
@@ -87,31 +87,21 @@ export default Component.extend({
   }),
 
   stats: computed('model', function() {
-    let data = {
-      yes: 0,
-      no: 0,
-      blank: 0,
-      absence: 0,
-      total: 0
-    }
+    const mapping = {
+      ja: 'yes',
+      nej: 'no',
+      avstår: 'blank',
+      frånvarande: 'absence',
+    };
+    const data = this.get('model').reduce((data, vote) => {
+      const key = mapping[vote.get('vote').toLowerCase()];
+      return Object.assign(data, {
+        [key]: data[key] + 1,
+        total: data.total + 1
+      });
+    }, Object.keys(mapping).reduce((acc, val) => Object.assign(acc, { [mapping[val]]: 0 }), { total: 0 }))
 
-    this.get('model').forEach(vote => {
-
-      if (vote.get('vote') == 'Ja') {
-        data.yes += 1;
-      } else if (vote.get('vote') == 'Nej') {
-        data.no += 1;
-      } else if (vote.get('vote') == 'Avstår') {
-        data.blank += 1;
-      } else if (vote.get('vote') == 'Frånvarande') {
-        data.absence += 1;
-      }
-
-      data.total += 1;
-      
-    })
-
-    let result = {
+    const result = {
       yes: Math.round(data.yes / data.total * 100),
       no: Math.round(data.no / data.total * 100),
       blank: Math.round(data.blank / data.total * 100),
