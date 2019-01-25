@@ -46,13 +46,6 @@ export default Component.extend({
     this.data = [];
   },
 
-  didReceiveAttrs() {
-    this._super(...arguments);
-    this.get('store').query('vote', {memberId: this.get('model.id')}).then(data => {
-      this.set('data', data)
-    })
-  },
-
   votedYes: computed('stats', {
     get() {
       const deg = 360 * this.get('stats.yes') / 100
