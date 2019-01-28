@@ -6,21 +6,15 @@ import hbs from 'htmlbars-inline-precompile';
 module('Integration | Component | member-info', function(hooks) {
   setupRenderingTest(hooks);
 
-  test('it renders', async function(assert) {
-    // Set any properties with this.set('myProperty', 'value');
-    // Handle any actions with this.set('myAction', function(val) { ... });
+  test('it render accurate born date', async function(assert) {
+    const born = 1988;
+    this.set('model', {
+      born,
+      information: []
+    });
 
-    await render(hbs`{{member-info}}`);
+    await render(hbs`{{member-info model=model}}`);
 
-    assert.equal(this.element.textContent.trim(), '');
-
-    // Template block usage:
-    await render(hbs`
-      {{#member-info}}
-        template block text
-      {{/member-info}}
-    `);
-
-    assert.equal(this.element.textContent.trim(), 'template block text');
+    assert.ok(this.element.textContent.trim().match(new RegExp(`Född: ${born}`)));
   });
 });
