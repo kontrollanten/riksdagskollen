@@ -6,7 +6,7 @@ export default DS.RESTAdapter.extend({
 
   namespace: 'personlista',
 
-  urlForFindAll(ids, modelName) {
+  urlForFindAll() {
     let baseUrl = this.buildURL();
     return `${baseUrl}/?utformat=json`;
   },
