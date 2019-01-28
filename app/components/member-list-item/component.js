@@ -6,34 +6,27 @@ export default Component.extend({
   backgroundImage: computed('url', function() {
 
     return htmlSafe(`background: url(${this.get('url')}) no-repeat center center; background-size: cover;`);
-
   }),
 
   prepareForForceClick(e) {
     e.preventDefault();
     e.stopPropagation();
-    console.log('prepare')
   },
 
   enterForceClick(e) {
     e.preventDefault();
     e.stopPropagation();
-    console.log('enter')
     this.toggleProperty('model.stared');
   },
-
-  endForceClick(e) {
-    console.log('end')
+  
+  endForceClick() {
   },
-
-  forceChanged(e) {
-    console.log('change')
+  
+  forceChanged() {
   },
 
   didInsertElement() {
     this._super(...arguments);
-
-    let self = this
 
     this.element.addEventListener("webkitmouseforcewillbegin", this.prepareForForceClick.bind(this), true);
     this.element.addEventListener("webkitmouseforcedown", this.enterForceClick.bind(this), false);
