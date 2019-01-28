@@ -7,20 +7,10 @@ module('Integration | Component | speech-list', function(hooks) {
   setupRenderingTest(hooks);
 
   test('it renders', async function(assert) {
-    // Set any properties with this.set('myProperty', 'value');
-    // Handle any actions with this.set('myAction', function(val) { ... });
+    this.set('model', []);
 
-    await render(hbs`{{speech-list}}`);
+    await render(hbs`{{speech-list model=model}}`);
 
     assert.equal(this.element.textContent.trim(), '');
-
-    // Template block usage:
-    await render(hbs`
-      {{#speech-list}}
-        template block text
-      {{/speech-list}}
-    `);
-
-    assert.equal(this.element.textContent.trim(), 'template block text');
   });
 });

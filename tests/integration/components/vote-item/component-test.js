@@ -6,21 +6,11 @@ import hbs from 'htmlbars-inline-precompile';
 module('Integration | Component | vote-item', function(hooks) {
   setupRenderingTest(hooks);
 
-  test('it renders', async function(assert) {
-    // Set any properties with this.set('myProperty', 'value');
-    // Handle any actions with this.set('myAction', function(val) { ... });
+  test('it renders accurate date', async function(assert) {
+    const date = 'julafton';
+    this.set('model', { date });
+    await render(hbs`{{vote-item model=model}}`);
 
-    await render(hbs`{{vote-item}}`);
-
-    assert.equal(this.element.textContent.trim(), '');
-
-    // Template block usage:
-    await render(hbs`
-      {{#vote-item}}
-        template block text
-      {{/vote-item}}
-    `);
-
-    assert.equal(this.element.textContent.trim(), 'template block text');
+    assert.ok(this.element.textContent.trim().match(new RegExp(date)));
   });
 });
