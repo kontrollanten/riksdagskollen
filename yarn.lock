@@ -1217,7 +1217,7 @@ braces@^2.3.1, braces@^2.3.2:
     split-string "^3.0.2"
     to-regex "^3.0.1"
 
-broccoli-asset-rev@^2.4.5:
+broccoli-asset-rev@2.7.0:
   version "2.7.0"
   resolved "https://registry.yarnpkg.com/broccoli-asset-rev/-/broccoli-asset-rev-2.7.0.tgz#c73da1d97c4180366fa442a87624ca1b7fb99161"
   dependencies:
@@ -1946,7 +1946,7 @@ code-point-at@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/code-point-at/-/code-point-at-1.1.0.tgz#0d070b4d043a5bea33a2f1a40e2edb3d9a4ccf77"
 
-codecov@^3.2.0:
+codecov@3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/codecov/-/codecov-3.2.0.tgz#4465ee19884528092d8c313e1f9e4bdc7d3065cd"
   dependencies:
@@ -2432,7 +2432,7 @@ elliptic@^6.0.0:
     minimalistic-assert "^1.0.0"
     minimalistic-crypto-utils "^1.0.0"
 
-ember-ajax@^3.0.0:
+ember-ajax@3.1.3:
   version "3.1.3"
   resolved "https://registry.yarnpkg.com/ember-ajax/-/ember-ajax-3.1.3.tgz#f51b8e3e36765575a2698c8660e377d4d6371642"
   dependencies:
@@ -2446,7 +2446,7 @@ ember-assign-polyfill@~2.4.0:
     ember-cli-babel "^6.6.0"
     ember-cli-version-checker "^2.0.0"
 
-ember-auto-import@^1.2.19:
+ember-auto-import@1.2.21:
   version "1.2.21"
   resolved "https://registry.yarnpkg.com/ember-auto-import/-/ember-auto-import-1.2.21.tgz#e02ded183844faba66c3f2af97028ef35175b837"
   dependencies:
@@ -2475,7 +2475,7 @@ ember-auto-import@^1.2.19:
     walk-sync "^0.3.3"
     webpack "~4.28"
 
-ember-cli-app-version@^3.0.0:
+ember-cli-app-version@3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/ember-cli-app-version/-/ember-cli-app-version-3.2.0.tgz#7b9ad0e1b63ae0518648356ee24c703e922bc26e"
   dependencies:
@@ -2500,7 +2500,7 @@ ember-cli-babel@6.12.0:
     ember-cli-version-checker "^2.1.0"
     semver "^5.4.1"
 
-ember-cli-babel@^6.0.0, ember-cli-babel@^6.0.0-beta.4, ember-cli-babel@^6.0.0-beta.7, ember-cli-babel@^6.11.0, ember-cli-babel@^6.12.0, ember-cli-babel@^6.16.0, ember-cli-babel@^6.6.0, ember-cli-babel@^6.8.1, ember-cli-babel@^6.8.2, ember-cli-babel@^6.9.0:
+ember-cli-babel@6.18.0, ember-cli-babel@^6.0.0, ember-cli-babel@^6.0.0-beta.4, ember-cli-babel@^6.0.0-beta.7, ember-cli-babel@^6.11.0, ember-cli-babel@^6.12.0, ember-cli-babel@^6.16.0, ember-cli-babel@^6.6.0, ember-cli-babel@^6.8.1, ember-cli-babel@^6.8.2, ember-cli-babel@^6.9.0:
   version "6.18.0"
   resolved "https://registry.yarnpkg.com/ember-cli-babel/-/ember-cli-babel-6.18.0.tgz#3f6435fd275172edeff2b634ee7b29ce74318957"
   dependencies:
@@ -2528,7 +2528,7 @@ ember-cli-broccoli-sane-watcher@^2.0.4:
     rsvp "^3.0.18"
     sane "^2.4.1"
 
-ember-cli-chart@^3.4.0:
+ember-cli-chart@3.4.0:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/ember-cli-chart/-/ember-cli-chart-3.4.0.tgz#1150230f25b6fcdbf3a1ac5c6841937e639e1aa7"
   dependencies:
@@ -2537,7 +2537,7 @@ ember-cli-chart@^3.4.0:
     ember-cli-node-assets "^0.2.2"
     fastboot-transform "^0.1.2"
 
-ember-cli-code-coverage@^0.4.2:
+ember-cli-code-coverage@0.4.2:
   version "0.4.2"
   resolved "https://registry.yarnpkg.com/ember-cli-code-coverage/-/ember-cli-code-coverage-0.4.2.tgz#bd223af453ef0b80e5482cc9958cd9726b5865c7"
   dependencies:
@@ -2559,7 +2559,7 @@ ember-cli-code-coverage@^0.4.2:
     source-map "0.5.6"
     string.prototype.startswith "^0.2.0"
 
-ember-cli-dependency-checker@^2.0.0:
+ember-cli-dependency-checker@2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/ember-cli-dependency-checker/-/ember-cli-dependency-checker-2.2.1.tgz#1eb728258dc7d528951c391d39b365e1beedecca"
   dependencies:
@@ -2569,7 +2569,7 @@ ember-cli-dependency-checker@^2.0.0:
     resolve "^1.5.0"
     semver "^5.3.0"
 
-ember-cli-eslint@^4.2.1:
+ember-cli-eslint@4.2.3:
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/ember-cli-eslint/-/ember-cli-eslint-4.2.3.tgz#2844d3f5e8184f19b2d7132ba99eb0b370b55598"
   dependencies:
@@ -2582,7 +2582,7 @@ ember-cli-get-component-path-option@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/ember-cli-get-component-path-option/-/ember-cli-get-component-path-option-1.0.0.tgz#0d7b595559e2f9050abed804f1d8eff1b08bc771"
 
-ember-cli-htmlbars-inline-precompile@^1.0.0:
+ember-cli-htmlbars-inline-precompile@1.0.5, ember-cli-htmlbars-inline-precompile@^1.0.0:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/ember-cli-htmlbars-inline-precompile/-/ember-cli-htmlbars-inline-precompile-1.0.5.tgz#312e050c9e3dd301c55fb399fd706296cd0b1d6a"
   dependencies:
@@ -2591,6 +2591,15 @@ ember-cli-htmlbars-inline-precompile@^1.0.0:
     hash-for-dep "^1.2.3"
     heimdalljs-logger "^0.1.9"
     silent-error "^1.1.0"
+
+ember-cli-htmlbars@2.0.5, ember-cli-htmlbars@^2.0.1, ember-cli-htmlbars@^2.0.3:
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/ember-cli-htmlbars/-/ember-cli-htmlbars-2.0.5.tgz#b5a105429a6bce4f7c9c97b667e3b8926e31397f"
+  dependencies:
+    broccoli-persistent-filter "^1.4.3"
+    hash-for-dep "^1.2.3"
+    json-stable-stringify "^1.0.0"
+    strip-bom "^3.0.0"
 
 ember-cli-htmlbars@^1.1.1:
   version "1.3.5"
@@ -2602,16 +2611,7 @@ ember-cli-htmlbars@^1.1.1:
     json-stable-stringify "^1.0.0"
     strip-bom "^2.0.0"
 
-ember-cli-htmlbars@^2.0.1, ember-cli-htmlbars@^2.0.3:
-  version "2.0.5"
-  resolved "https://registry.yarnpkg.com/ember-cli-htmlbars/-/ember-cli-htmlbars-2.0.5.tgz#b5a105429a6bce4f7c9c97b667e3b8926e31397f"
-  dependencies:
-    broccoli-persistent-filter "^1.4.3"
-    hash-for-dep "^1.2.3"
-    json-stable-stringify "^1.0.0"
-    strip-bom "^3.0.0"
-
-ember-cli-inject-live-reload@^1.4.1:
+ember-cli-inject-live-reload@1.10.2:
   version "1.10.2"
   resolved "https://registry.yarnpkg.com/ember-cli-inject-live-reload/-/ember-cli-inject-live-reload-1.10.2.tgz#43c59f7f1d1e717772da32e5e81d948fb9fe7c94"
   dependencies:
@@ -2656,14 +2656,14 @@ ember-cli-preprocess-registry@^3.1.0:
     debug "^3.0.1"
     process-relative-require "^1.0.0"
 
-ember-cli-qunit@^4.1.1:
+ember-cli-qunit@4.4.0:
   version "4.4.0"
   resolved "https://registry.yarnpkg.com/ember-cli-qunit/-/ember-cli-qunit-4.4.0.tgz#0edd7d651001d0d7ea200b9236a4733a5b7420f1"
   dependencies:
     ember-cli-babel "^6.11.0"
     ember-qunit "^3.5.0"
 
-ember-cli-sass@^7.1.7:
+ember-cli-sass@7.2.0:
   version "7.2.0"
   resolved "https://registry.yarnpkg.com/ember-cli-sass/-/ember-cli-sass-7.2.0.tgz#293d1a94c43c1fdbb3835378e43d255e8ad5c961"
   dependencies:
@@ -2672,7 +2672,7 @@ ember-cli-sass@^7.1.7:
     broccoli-sass-source-maps "^2.1.0"
     ember-cli-version-checker "^2.1.0"
 
-ember-cli-shims@^1.2.0:
+ember-cli-shims@1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/ember-cli-shims/-/ember-cli-shims-1.2.0.tgz#0f53aff0aab80b5f29da3a9731bac56169dd941f"
   dependencies:
@@ -2682,7 +2682,7 @@ ember-cli-shims@^1.2.0:
     ember-rfc176-data "^0.3.1"
     silent-error "^1.0.1"
 
-ember-cli-sri@^2.1.0:
+ember-cli-sri@2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/ember-cli-sri/-/ember-cli-sri-2.1.1.tgz#971620934a4b9183cf7923cc03e178b83aa907fd"
   dependencies:
@@ -2704,7 +2704,7 @@ ember-cli-test-loader@^2.2.0:
   dependencies:
     ember-cli-babel "^6.8.1"
 
-ember-cli-uglify@^2.0.0:
+ember-cli-uglify@2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/ember-cli-uglify/-/ember-cli-uglify-2.1.0.tgz#4a0641fe4768d7ab7d4807aca9924cc77c544184"
   dependencies:
@@ -2730,7 +2730,7 @@ ember-cli-version-checker@^2.0.0, ember-cli-version-checker@^2.1.0, ember-cli-ve
     resolve "^1.3.3"
     semver "^5.3.0"
 
-ember-cli@~3.1.3:
+ember-cli@3.1.4:
   version "3.1.4"
   resolved "https://registry.yarnpkg.com/ember-cli/-/ember-cli-3.1.4.tgz#95f7ff4302d535619b5d5ff1c7040877a67d4468"
   dependencies:
@@ -2832,7 +2832,7 @@ ember-copy@^1.0.0:
   dependencies:
     ember-cli-babel "^6.6.0"
 
-ember-data@~3.1.0:
+ember-data@3.1.2:
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/ember-data/-/ember-data-3.1.2.tgz#10525e7d3ea52919596b335bdd68f3802de7cda3"
   dependencies:
@@ -2868,7 +2868,7 @@ ember-data@~3.1.0:
     semver "^5.1.0"
     silent-error "^1.0.0"
 
-ember-export-application-global@^2.0.0:
+ember-export-application-global@2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/ember-export-application-global/-/ember-export-application-global-2.0.0.tgz#8d6d7619ac8a1a3f8c43003549eb21ebed685bd2"
   dependencies:
@@ -2900,22 +2900,22 @@ ember-inflector@^2.0.0:
   dependencies:
     ember-cli-babel "^6.0.0"
 
-ember-load-initializers@^1.0.0:
+ember-load-initializers@1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/ember-load-initializers/-/ember-load-initializers-1.1.0.tgz#4edacc0f3a14d9f53d241ac3e5561804c8377978"
   dependencies:
     ember-cli-babel "^6.6.0"
 
-ember-material-icons@^1.1.0:
+ember-material-icons@1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/ember-material-icons/-/ember-material-icons-1.1.0.tgz#a583426e30787adb24f8eb57e96657d5e99ac155"
   dependencies:
     broccoli-funnel "^1.2.0"
     ember-cli-babel "^6.0.0"
     ember-cli-htmlbars "^1.1.1"
-    material-design-iconfont ynnoj/material-design-iconfont
+    material-design-iconfont "github:ynnoj/material-design-iconfont"
 
-ember-maybe-import-regenerator@^0.1.6:
+ember-maybe-import-regenerator@0.1.6:
   version "0.1.6"
   resolved "https://registry.yarnpkg.com/ember-maybe-import-regenerator/-/ember-maybe-import-regenerator-0.1.6.tgz#35d41828afa6d6a59bc0da3ce47f34c573d776ca"
   dependencies:
@@ -2936,7 +2936,7 @@ ember-qunit@^3.5.0:
     ember-cli-test-loader "^2.2.0"
     qunit "~2.6.0"
 
-ember-resolver@^4.0.0:
+ember-resolver@4.5.6:
   version "4.5.6"
   resolved "https://registry.yarnpkg.com/ember-resolver/-/ember-resolver-4.5.6.tgz#61cecc683fbe3464d759e6d0c2bab97b3914ee4b"
   dependencies:
@@ -2969,7 +2969,7 @@ ember-runtime-enumerable-includes-polyfill@^2.0.0:
     ember-cli-babel "^6.9.0"
     ember-cli-version-checker "^2.1.0"
 
-ember-source@~3.1.0:
+ember-source@3.1.4:
   version "3.1.4"
   resolved "https://registry.yarnpkg.com/ember-source/-/ember-source-3.1.4.tgz#e7e6cd45a0bc695ad9f9efe5fa32b2cfd2071d7a"
   dependencies:
@@ -2987,7 +2987,7 @@ ember-source@~3.1.0:
     jquery "^3.3.1"
     resolve "^1.5.0"
 
-ember-welcome-page@^3.0.0:
+ember-welcome-page@3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/ember-welcome-page/-/ember-welcome-page-3.2.0.tgz#fe9903dbbaccfb4a2a05f42c716b7d07470f2d78"
   dependencies:
@@ -3165,7 +3165,7 @@ escodegen@^1.8.0:
   optionalDependencies:
     source-map "~0.6.1"
 
-eslint-plugin-ember@^5.0.0:
+eslint-plugin-ember@5.4.0:
   version "5.4.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-ember/-/eslint-plugin-ember-5.4.0.tgz#2980a4389119b37d0450fff8e82d59c9aab126d0"
   dependencies:
@@ -4648,7 +4648,7 @@ linkify-it@^2.0.0:
   dependencies:
     uc.micro "^1.0.1"
 
-liquid-fire@^0.29.5:
+liquid-fire@0.29.5:
   version "0.29.5"
   resolved "https://registry.yarnpkg.com/liquid-fire/-/liquid-fire-0.29.5.tgz#da8e3158e3f96c34a8cf371b90b8ae941ea8960d"
   dependencies:
@@ -4690,7 +4690,7 @@ loader-utils@^1.1.0:
     emojis-list "^2.0.0"
     json5 "^1.0.1"
 
-loader.js@^4.2.3:
+loader.js@4.7.0:
   version "4.7.0"
   resolved "https://registry.yarnpkg.com/loader.js/-/loader.js-4.7.0.tgz#a1a52902001c83631efde9688b8ab3799325ef1f"
 
@@ -5131,8 +5131,9 @@ matcher-collection@^1.0.0, matcher-collection@^1.0.5:
   dependencies:
     minimatch "^3.0.2"
 
-material-design-iconfont@ynnoj/material-design-iconfont:
+"material-design-iconfont@github:ynnoj/material-design-iconfont":
   version "1.0.0"
+  uid "538e238ad0a47db7cbe826c0026e44e5a4c2159c"
   resolved "https://codeload.github.com/ynnoj/material-design-iconfont/tar.gz/538e238ad0a47db7cbe826c0026e44e5a4c2159c"
 
 md5-hex@^1.3.0:
@@ -7633,7 +7634,7 @@ xdg-basedir@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/xdg-basedir/-/xdg-basedir-3.0.0.tgz#496b2cc109eca8dbacfe2dc72b603c17c5870ad4"
 
-xml-js@^1.6.9:
+xml-js@1.6.11:
   version "1.6.11"
   resolved "https://registry.yarnpkg.com/xml-js/-/xml-js-1.6.11.tgz#927d2f6947f7f1c19a316dd8eea3614e8b18f8e9"
   dependencies:
