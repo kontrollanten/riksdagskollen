@@ -6,14 +6,16 @@ export default DS.RESTAdapter.extend({
 
   namespace: 'personlista',
 
+  shouldBackgroundReloadAll() {
+    return false;
+  },
+
   urlForFindAll() {
-    let baseUrl = this.buildURL();
-    return `${baseUrl}/?utformat=json`;
+    return `${this.buildURL()}/?utformat=json`;
   },
 
   urlForFindRecord(ids, modelName, snapshot) {
-    let baseUrl = this.buildURL();
-    return `${baseUrl}/?utformat=json&iid=${snapshot.id}`;
+    return `${this.buildURL()}/?utformat=json&iid=${snapshot.id}`;
   }
 
 });
