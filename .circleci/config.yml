@@ -3,7 +3,7 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: node:10.15.1-alpine
+      - image: node:10.15.1
     steps:
       - checkout
       - restore_cache:
