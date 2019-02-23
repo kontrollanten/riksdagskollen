@@ -4,7 +4,6 @@ jobs:
   build:
     docker:
       - image: node:10.15.1
-      - image: selenium/standalone-chrome:3.141
     steps:
       - checkout
       - restore_cache:
