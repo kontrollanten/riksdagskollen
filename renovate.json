@@ -1,5 +1,18 @@
 {
   "extends": [
     "config:base"
+  ],
+  "packageRules": [
+    {
+      "automerge": true,
+      "automergeType": "pr",
+      "packagePatterns": [
+        "codecov",
+        "ember-cli-code-coverage",
+        "ember-cli-eslint",
+        "ember-cli-qunit",
+        "eslint-plugin-ember"
+      ]
+    }
   ]
 }
