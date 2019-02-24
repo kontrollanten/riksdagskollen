@@ -43,7 +43,7 @@
     "ember-maybe-import-regenerator": "0.1.6",
     "ember-resolver": "4.5.6",
     "ember-source": "3.1.4",
-    "ember-welcome-page": "3.2.0",
+    "ember-welcome-page": "4.0.0",
     "eslint-plugin-ember": "6.2.0",
     "liquid-fire": "0.29.5",
     "loader.js": "4.7.0"
