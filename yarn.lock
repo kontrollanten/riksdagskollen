@@ -5646,8 +5646,9 @@ matcher-collection@^1.0.0, matcher-collection@^1.0.4, matcher-collection@^1.0.5,
   dependencies:
     minimatch "^3.0.2"
 
-"material-design-iconfont@github:ynnoj/material-design-iconfont":
+material-design-iconfont@ynnoj/material-design-iconfont:
   version "1.0.0"
+  uid "538e238ad0a47db7cbe826c0026e44e5a4c2159c"
   resolved "https://codeload.github.com/ynnoj/material-design-iconfont/tar.gz/538e238ad0a47db7cbe826c0026e44e5a4c2159c"
 
 md5-hex@^2.0.0:
@@ -7001,7 +7002,7 @@ sane@^4.0.0:
     walker "~1.0.5"
     watch "~0.18.0"
 
-sass@^1.17.2:
+sass@1.17.2:
   version "1.17.2"
   resolved "https://registry.yarnpkg.com/sass/-/sass-1.17.2.tgz#b5a28f2f13c6a219f28084c03623bb2c8d176323"
   integrity sha512-TBNcwSIEXpXAIaFxQnWbHzhciwPKpHRprQ+1ww+g9eHCiY3PINJs6vQTu+LcBt1vIhrtQGRFIoxJO39TfLrptA==
