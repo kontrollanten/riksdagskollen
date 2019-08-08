@@ -815,6 +815,11 @@
     ember-cli-typescript "^2.0.1"
     inflection "1.12.0"
 
+"@ember-data/rfc395-data@^0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@ember-data/rfc395-data/-/rfc395-data-0.0.4.tgz#ecb86efdf5d7733a76ff14ea651a1b0ed1f8a843"
+  integrity sha512-tGRdvgC9/QMQSuSuJV45xoyhI0Pzjm7A9o/MVVA3HakXIImJbbzx/k/6dO9CUEQXIyS2y0fW6C1XaYOG7rY0FQ==
+
 "@ember-data/serializer@^3.11.3":
   version "3.11.3"
   resolved "https://registry.yarnpkg.com/@ember-data/serializer/-/serializer-3.11.3.tgz#1bbf6cf195f381dfb8080d2bf7716ad5f01411b4"
@@ -4476,11 +4481,12 @@ escodegen@^1.11.0, escodegen@^1.8.0:
   optionalDependencies:
     source-map "~0.6.1"
 
-eslint-plugin-ember@6.7.1:
-  version "6.7.1"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-ember/-/eslint-plugin-ember-6.7.1.tgz#be11e3b9b8f38227b81d90b11792a395322a9b4f"
-  integrity sha512-5qzd/5zjXRVlyWpDcRRaIdl6yAHLrUCUyNE71pnk3Egs/erqQazyQHjKKToIWjTA1a7ba/WEC72tJ8HbLsevhA==
+eslint-plugin-ember@6.8.0:
+  version "6.8.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-ember/-/eslint-plugin-ember-6.8.0.tgz#5270b2ea2728a9e960dedd0f3a807ef77d807ddb"
+  integrity sha512-R3gk1e/VafoUiLg3Y4fpnRNiQF8L1g2UxvbzwqCj9u3WhVOOptxqq8PebZxvLb1acfUY1/3y8+IbYSUwLn6v4A==
   dependencies:
+    "@ember-data/rfc395-data" "^0.0.4"
     ember-rfc176-data "^0.3.9"
     snake-case "^2.1.0"
 
