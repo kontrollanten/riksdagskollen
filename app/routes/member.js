@@ -1,11 +1,19 @@
 import Route from '@ember/routing/route';
 
+const getTitle = ({
+  firstName,
+  lastName,
+  party,
+}, subTitle) => [`${firstName} ${lastName}, ${party}`, subTitle, 'Riksdagskollen'].filter(p => p).join(' | ');
+
 export default Route.extend({
   model(params) {
     return this.get('store').findRecord('member', params.member_id);
   },
-  afterModel: function() {
+  afterModel: function(member) {
     this.transitionTo('info');
+
+    document.title = getTitle(member);
   },
   actions: {
     loading(transition) {
