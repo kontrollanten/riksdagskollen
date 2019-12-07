@@ -6,6 +6,27 @@ export default DS.RESTAdapter.extend({
 
   namespace: 'personlista',
 
+  findAll() {
+    const lsKey = 'data-members';
+
+    const fetchEm = () => fetch(this.urlForFindAll())
+      .then(resp => resp.json())
+      .then(members => {
+        localStorage.setItem(lsKey, JSON.stringify(members));
+
+        return members;
+      });
+
+    const cachedVal = localStorage.getItem(lsKey);
+    if (cachedVal) {
+      fetchEm();
+
+      return Promise.resolve(JSON.parse(cachedVal));
+    }
+
+    return fetchEm();
+  },
+
   shouldBackgroundReloadAll() {
     return false;
   },
