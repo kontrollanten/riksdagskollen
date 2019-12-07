@@ -3869,9 +3869,10 @@ charm@^1.0.0:
   dependencies:
     inherits "^2.0.1"
 
-chart.js@^2.7.0:
-  version "2.7.3"
-  resolved "https://registry.yarnpkg.com/chart.js/-/chart.js-2.7.3.tgz#cdb61618830bf216dc887e2f7b1b3c228b73c57e"
+chart.js@^2.8.0:
+  version "2.9.3"
+  resolved "https://registry.yarnpkg.com/chart.js/-/chart.js-2.9.3.tgz#ae3884114dafd381bc600f5b35a189138aac1ef7"
+  integrity sha512-+2jlOobSk52c1VU6fzkh3UwqHMdSlgH1xFv9FKMqHiNCpXsGPQa/+81AFa+i3jZ253Mq9aAycPwDjnn1XbRNNw==
   dependencies:
     chartjs-color "^2.1.0"
     moment "^2.10.2"
@@ -4799,12 +4800,13 @@ ember-cli-broccoli-sane-watcher@^3.0.0:
     rsvp "^3.0.18"
     sane "^4.0.0"
 
-ember-cli-chart@3.4.0:
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/ember-cli-chart/-/ember-cli-chart-3.4.0.tgz#1150230f25b6fcdbf3a1ac5c6841937e639e1aa7"
+ember-cli-chart@3.5.0:
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/ember-cli-chart/-/ember-cli-chart-3.5.0.tgz#c20df59413cd3473d17a39b40db810ebb2b45544"
+  integrity sha512-L7HWIOGXKEV/UKR9cioKQXlsDmx2DPAScirx6tQXB5aBx5hOYGSx6QHG2dSzMimI86hD5JstbuqeTyTfmRv+RA==
   dependencies:
-    chart.js "^2.7.0"
-    ember-cli-babel "^6.6.0"
+    chart.js "^2.8.0"
+    ember-cli-babel "^7.7.3"
     ember-cli-node-assets "^0.2.2"
     fastboot-transform "^0.1.2"
 
