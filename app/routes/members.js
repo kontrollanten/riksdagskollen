@@ -1,6 +1,9 @@
 import Route from '@ember/routing/route';
 
 export default Route.extend({
+  activate() {
+    document.title = 'Riksdagskollen - Håll koll på Riksdagen.';
+  },
   model() {
     let models = this.store.peekAll('member');
     let reload = true;
