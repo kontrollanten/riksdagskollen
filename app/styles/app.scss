@@ -101,34 +101,53 @@ body > .ember-view {
   border-radius: 60px;
 }
 
-.member-profile-image {
-  object-fit: cover;
-  width: 200%;
-  height: 500px;
-  overflow: hidden;
-}
+.member-profile {
+  $max-width-mobile: 400px;
+  $max-width-desktop: 600px;
 
-@media only screen and (min-width: 420px) {
-  /* For desktop: */
-  .member-profile-image {
-    width: 150%;
+  header {
+    padding: 60px 20px 0;
+    max-width: $max-width-mobile;
+    margin-left: auto;
+    margin-right: auto;
+
+      @media only screen and (min-width: 700px) {
+        max-width: $max-width-desktop;
+      }
+
+    img {
+      height: auto;
+      overflow: hidden;
+      vertical-align: middle;
+      width: 120px;
+
+      @media only screen and (min-width: 420px) {
+      }
+    }
+
+    .member-name {
+      display: inline-block;
+      color: rgba(255, 255, 255, 0.7);
+      text-align: center;
+
+      h1 {
+        margin-bottom: 4px;
+        padding-bottom: 8px;
+      }
+    }
+  }
+
+  .member-content {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: $max-width-mobile;
+
+    @media only screen and (min-width: 700px) {
+      max-width: $max-width-desktop;
+    }
   }
 }
 
-@media only screen and (min-width: 700px) {
-  /* For desktop: */
-  .member-profile-image {
-    width: 100%;
-  }
-}
-
-.profile-overlay {
-  position: absolute;
-  top: 0;
-  background: linear-gradient(45deg, rgba(90, 33, 54, 0.65) 0%, rgba(32, 31, 36, 0.25) 100%);
-  width: 100%;
-  height: 500px;
-}
 
 .padding {
   padding: 20px;
@@ -211,8 +230,6 @@ h3.member-category {
 
 .member-menu {
   padding: 20px 0;
-  position: absolute;
-  top: 448px;
 }
 
 .members-wrapper {
@@ -221,20 +238,8 @@ h3.member-category {
   max-width: 900px;
 }
 
-.member-content {
-  margin: 0 auto;
-  padding: 0 20px;
-  max-width: 400px;
-}
-
 .vote-pie {
   padding-bottom: 40px;
-}
-@media only screen and (min-width: 700px) {
-  /* For desktop: */
-  .member-content {
-    max-width: 600px;
-  }
 }
 
 .member-menu-item {
@@ -287,21 +292,6 @@ h3.member-category {
     font-size: 12px;
   }
 
-}
-
-
-
-.member-name {
-  position: absolute;
-  top: 240px;
-  color: rgba(255, 255, 255, 0.7);
-  padding-left: 20px;
-  
-  h1 {
-    margin-bottom: 4px;
-    padding-bottom: 8px;
-  }
-  
 }
 
 .member-party {
@@ -430,13 +420,6 @@ a {
     font-weight: normal;
     font-size: 1.5rem;
   }
-}
-
-.profile-image-wrapper {
-  width: 100%;
-  overflow: hidden;
-  padding: 0;
-  margin: 0;
 }
 
 .box {

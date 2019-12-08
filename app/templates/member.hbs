@@ -1,19 +1,17 @@
 {{#member-profile model=model}}
-
-  <figure class="profile-image-wrapper">
-    <img class="member-profile-image" src={{model.bigImage}}>
-    <div class="profile-overlay"></div>
-  </figure>
-
   <div class="back-to-root">
     {{#link-to 'members'}}{{material-icon "chevron_left"}}{{/link-to}}
     {{star-member member=model}}
   </div>
 
-  <div class="member-name">
-    <h1>{{model.firstName}} {{model.lastName}}</h1>
-    <p class="member-party">{{model.party}}</p>
-  </div>
+  <header>
+    <img src={{model.thumbnail}}>
+
+    <div class="member-name">
+      <h1>{{model.firstName}} {{model.lastName}}</h1>
+      <p class="member-party">{{model.party}}</p>
+    </div>
+  </header>
 
   <div class="member-content">
 
