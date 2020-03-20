@@ -44,7 +44,7 @@
     "ember-resolver": "6.0.0",
     "ember-source": "3.14.3",
     "ember-welcome-page": "3.2.0",
-    "eslint-plugin-ember": "7.7.2",
+    "eslint-plugin-ember": "7.11.0",
     "liquid-fire": "0.31.0",
     "loader.js": "4.7.0",
     "sass": "1.23.7"
