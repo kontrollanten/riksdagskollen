@@ -42,7 +42,7 @@
     "ember-material-icons": "1.1.0",
     "ember-maybe-import-regenerator": "0.1.6",
     "ember-resolver": "6.0.0",
-    "ember-source": "3.14.3",
+    "ember-source": "3.25.1",
     "ember-welcome-page": "3.2.0",
     "eslint-plugin-ember": "7.7.2",
     "liquid-fire": "0.31.0",
